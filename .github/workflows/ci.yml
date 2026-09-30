@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Copy code to machine
+        uses: actions/checkout@v6
+
+      - name: install uv
+        uses: astral-sh/setup-uv@v6
+
       - name: Install dependencies
         run: uv sync --locked
 
