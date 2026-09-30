@@ -1,11 +1,11 @@
-name: Python CI
+name: CICD Factorial
 
 on:
   push:
     branches: [main]
 
 jobs:
-  test:
+  testing_first:
 
     runs-on: ubuntu-latest
 
